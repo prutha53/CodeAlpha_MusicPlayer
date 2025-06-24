@@ -33,10 +33,10 @@ const songs = [
 
 const themes = [
   "linear-gradient(to right, #bd424e, #ffaf7b)",
-  "linear-gradient(to right, #082db3, #ed7ff5)",
   "linear-gradient(to right, #4568dc, #b06ab3)",
+  "linear-gradient(to right,rgb(27, 3, 87),rgb(106, 107, 179))",
   "linear-gradient(to right, #c73867, #f598b7)",
-  "linear-gradient(to right, #d12760, #ff7c5e)"
+  "linear-gradient(to right,rgb(247, 130, 72),rgb(244, 165, 146))"
 ];
 
 let currentSong = 0;
@@ -152,3 +152,20 @@ songs.forEach((song,i)=>{
   playlist.appendChild(li);
 });
 loadSong(songs[currentSong]);
+const openBtn = document.getElementById("openPlaylistBtn");
+const modal = document.getElementById("playlistModal");
+const closeBtn = document.querySelector(".close-btn");
+
+openBtn.addEventListener("click", () => {
+  modal.classList.remove("hidden");
+});
+
+closeBtn.addEventListener("click", () => {
+  modal.classList.add("hidden");
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.add("hidden");
+  }
+});
