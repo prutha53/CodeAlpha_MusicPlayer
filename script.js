@@ -152,6 +152,7 @@ songs.forEach((song,i)=>{
   playlist.appendChild(li);
 });
 loadSong(songs[currentSong]);
+
 const openBtn = document.getElementById("openPlaylistBtn");
 const modal = document.getElementById("playlistModal");
 const closeBtn = document.querySelector(".close-btn");
