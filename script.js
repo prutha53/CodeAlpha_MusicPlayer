@@ -28,7 +28,55 @@ const songs = [
     artist: "Kevin MacLeod",
     src: "music/AddingtheSun.wav",
     cover: "mp_image/as.jpg"
-  }
+  },
+  {
+    title: "Going Higher",
+    artist: "Bensound",
+    src: "music/Going higher.wav",
+    cover: "mp_image/Going Higher.jpg"
+  },
+  {
+    title: "Hey!",
+    artist: "Bensound",
+    src: "music/Hey.wav",
+    cover: "mp_image/Hey.jpg"
+  },
+  {
+    title: "Creative Minds",
+    artist: "Bensound",
+    src: "music/Creativeminds.wav",
+    cover: "mp_image/Creative Minds.jpg"
+  },
+  {
+    title: "Dreams",
+    artist: "Bensound",
+    src: "music/Dreams.wav",
+    cover: "mp_image/Dreams.jpg"
+  },
+  {
+    title: "Carefree",
+    artist: "Kevin MacLeod",
+    src: "music/Carefree.wav",
+    cover: "mp_image/Carefree.jpg"
+  },
+  {
+    title: "Life of Riley",
+    artist: "Kevin MacLeod",
+    src: "music/Life of Riley.wav",
+    cover: "mp_image/Life of Riley.jpg"
+  },
+  {
+    title: "Montauk Point",
+    artist: "Kevin MacLeod",
+    src: "music/Montauk Point.wav",
+    cover: "mp_image/Montauk Point.jpg"
+  },
+  {
+    title: "Acoustic Breeze",
+    artist: "Bensound",
+    src: "music/Acousticbreeze.wav",
+    cover: "mp_image/Acoustic Breeze.jpg"
+  },
 ];
 
 const themes = [
@@ -36,7 +84,19 @@ const themes = [
   "linear-gradient(to right, #4568dc, #b06ab3)",
   "linear-gradient(to right,rgb(27, 3, 87),rgb(106, 107, 179))",
   "linear-gradient(to right, #c73867, #f598b7)",
+<<<<<<< HEAD
   "linear-gradient(to right,rgb(247, 130, 72),rgb(244, 165, 146))"
+=======
+  "linear-gradient(to right,rgb(247, 130, 72),rgb(244, 165, 146))",
+  "linear-gradient(to right,rgba(59, 125, 92, 0.5),rgb(164, 248, 198))",
+  "linear-gradient(to right,rgb(207, 53, 68),rgb(206, 239, 243))",
+  "linear-gradient(to right,rgba(139, 69, 76, 0.79),rgb(236, 207, 189))",
+  "linear-gradient(to right,rgb(49, 149, 69),rgb(243, 235, 231))",
+  "linear-gradient(to right,rgb(204, 136, 81),rgb(245, 198, 167))",
+  "linear-gradient(to right,rgba(135, 255, 201, 0.82),rgb(152, 222, 241))",
+  "linear-gradient(to right,rgb(206, 81, 158),rgb(247, 124, 124))",
+  "linear-gradient(to right,rgb(156, 73, 82),rgb(247, 167, 114))",
+>>>>>>> 5aaf35e (initial commit)
 ];
 
 let currentSong = 0;
@@ -170,3 +230,17 @@ window.addEventListener("click", (e) => {
     modal.classList.add("hidden");
   }
 });
+<<<<<<< HEAD
+=======
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("input", function () {
+  const query = this.value.toLowerCase();
+  const items = playlist.getElementsByTagName("li");
+  
+  for (let item of items) {
+    const text = item.textContent.toLowerCase();
+    item.style.display = text.includes(query) ? "" : "none";
+  }
+});
+>>>>>>> 5aaf35e (initial commit)
